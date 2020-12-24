@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: '24 2 * * 4'
+    - cron: '30 7 * * 6'
 
 jobs:
   analyze:
@@ -16,15 +16,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'csharp' ]
-
+        language: [ 'javascript' ]
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '5.0.100'
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
       with:

@@ -34,16 +34,12 @@ list_platforms() {
 }
 
 do_build_native() {
-    if [[ ! -f $( which dpkg ) || $( dpkg --print-architecture | head -1 ) != "${PLATFORM##*.}" ]]; then
-        echo "Cross-building is not supported for native builds, use 'docker' builds on amd64 for cross-building."
-        exit 1
-    fi
     export IS_DOCKER=NO
     deployment/build.${PLATFORM}
 }
 
 do_build_docker() {
-    if [[ -f $( which dpkg ) && $( dpkg --print-architecture | head -1 ) != "amd64" ]]; then
+    if ! dpkg --print-architecture | grep -q 'amd64'; then
         echo "Docker-based builds only support amd64-based cross-building; use a 'native' build instead."
         exit 1
     fi
@@ -67,17 +63,17 @@ while [[ $# -gt 0 ]]; do
     case $key in
         -t|--type)
         BUILD_TYPE="$2"
-        shift # past argument
-        shift # past value
+        shift
+        shift
         ;;
         -p|--platform)
         PLATFORM="$2"
-        shift # past argument
-        shift # past value
+        shift
+        shift
         ;;
         -k|--keep-artifacts)
         KEEP_ARTIFACTS=YES
-        shift # past argument
+        shift
         ;;
         -l|--list-platforms)
         list_platforms
@@ -87,7 +83,7 @@ while [[ $# -gt 0 ]]; do
         usage
         exit 0
         ;;
-        *)    # unknown option
+        *)
         echo "Unknown option $1"
         usage
         exit 1
