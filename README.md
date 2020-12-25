@@ -1,4 +1,4 @@
-<h1 align="center">Jellyfin Web</h1>
+<h1 align="center">Jellyfin Vue</h1>
 <h3 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h3>
 
 ---
@@ -7,14 +7,14 @@
 <img alt="Logo Banner" src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/banner-logo-solid.svg?sanitize=true"/>
 <br/>
 <br/>
-<a href="https://github.com/jellyfin/jellyfin-web">
-<img alt="GPL 2.0 License" src="https://img.shields.io/github/license/jellyfin/jellyfin-web.svg"/>
+<a href="https://github.com/jellyfin/jellyfin-vue">
+<img alt="GPL 3.0 License" src="https://img.shields.io/github/license/jellyfin/jellyfin-vue.svg"/>
 </a>
-<a href="https://github.com/jellyfin/jellyfin-web/releases">
-<img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-web.svg"/>
+<a href="https://github.com/jellyfin/jellyfin-vue/releases">
+<img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-vue.svg"/>
 </a>
-<a href="https://translate.jellyfin.org/projects/jellyfin/jellyfin-web/?utm_source=widget">
-<img src="https://translate.jellyfin.org/widgets/jellyfin/-/jellyfin-web/svg-badge.svg" alt="Translation Status"/>
+<a href="http://commitizen.github.io/cz-cli/">
+<img alt="Commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" />
 </a>
 <br/>
 <a href="https://opencollective.com/jellyfin">
@@ -34,42 +34,41 @@
 </a>
 </p>
 
-Jellyfin Web is the frontend used for most of the clients available for end users, such as desktop browsers, Android, and iOS. We welcome all contributions and pull requests! If you have a larger feature in mind please open an issue so we can discuss the implementation before you start. Translations can be improved very easily from our <a href="https://translate.jellyfin.org/projects/jellyfin/jellyfin-web">Weblate</a> instance. Look through the following graphic to see if your native language could use some work!
+This is an experimental web client for Jellyfin based on Vue.js. We welcome all contributions and pull requests! If you have a larger feature in mind please open an issue so we can discuss the implementation before you start.
 
-<a href="https://translate.jellyfin.org/engage/jellyfin/?utm_source=widget">
-<img src="https://translate.jellyfin.org/widgets/jellyfin/-/jellyfin-web/multi-auto.svg" alt="Detailed Translation Status"/>
-</a>
+## Requirements
+
+This project uses [Yarn](https://yarnpkg.com/getting-started/install) as a package manager.
+
+## Contributing
+
+We provide a [devcontainer](https://code.visualstudio.com/docs/remote/containers) to help you setup your environment.
+
+The project also contains recommended extensions for [Visual Studio Code](https://code.visualstudio.com/), which will help you with syntax style and development.
+
+Finally, we provide useful pre-commit hooks via [Husky](https://typicode.github.io/husky/#/), as well as [Comitizen](https://github.com/commitizen/cz-cli) integration, in order to help you respect the style and naming conventions used throughout this project.
+
+For more information about how to contribute to this project, see [CONTRIBUTING.md](https://github.com/jellyfin/jellyfin-vue/blob/master/CONTRIBUTING.md)
+
+## Pre-requirements
+
+```
+Jellyfin >=10.7.0
+```
 
 ## Build Process
 
-### Dependencies
+```bash
+# install dependencies
+$ yarn install
 
-- [Node.js](https://nodejs.org/en/download)
-- [Yarn 1.22.5](https://classic.yarnpkg.com/en/docs/install)
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-### Getting Started
+# build for production and launch server
+$ yarn build
+$ yarn start
 
-1. Clone or download this repository.
-
-   ```sh
-   git clone https://github.com/jellyfin/jellyfin-web.git
-   cd jellyfin-web
-   ```
-
-2. Install build dependencies in the project directory.
-
-   ```sh
-   yarn install
-   ```
-
-3. Run the web client with webpack for local development.
-
-   ```sh
-   yarn serve
-   ```
-
-4. Build the client with sourcemaps available.
-
-   ```sh
-   yarn build:development
-   ```
+# generate static project
+$ yarn generate
+```

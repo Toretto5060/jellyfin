@@ -1,0 +1,146 @@
+{
+    "alphabetically": "Alphabétiquement",
+    "badRequest": "Mauvaise requête. Réessayez",
+    "continueListening": "Poursuivre l'écoute",
+    "continueWatching": "Poursuivre le visionnage",
+    "endDate": "Date de fin",
+    "endsAt": "Prends fin à {time}",
+    "episodeNumber": "Épisode {episodeNumber}",
+    "home": "Accueil",
+    "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect",
+    "itemNotFound": "Élément introuvable",
+    "libraryEmpty": "Cette médiathèque est vide",
+    "libraryNotFound": "Médiathèque introuvable",
+    "login": "Connexion",
+    "logout": "Se déconnecter",
+    "more": "Plus",
+    "movies": "Films",
+    "password": "Mot de passe",
+    "play": "Lire",
+    "playType": "Lire {mediaType}",
+    "present": "Maintenant",
+    "rating": "Critique",
+    "releaseDate": "Date de sortie",
+    "serverAddress": "Adresse du serveur",
+    "serverAddressMustBeUrl": "L'adresse du serveur doit être une adresse valide",
+    "serverAddressRequired": "L'adresse du serveur est requise",
+    "serverNotFound": "Serveur introuvable",
+    "settings": "Paramètres",
+    "signIn": "Se connecter",
+    "unexpectedError": "Erreur inattendue",
+    "upNext": "À suivre",
+    "username": "Nom d'utilisateur",
+    "usernameRequired": "Nom d'utilisateur requis",
+    "youMayAlsoLike": "Vous pourriez également aimer",
+    "youMightLike": "",
+    "shows": "Émissions",
+    "moreLikeThis": "Similaires",
+    "browserNotSupported": "Votre navigateur n'est pas pris en charge pour la lecture de ce fichier.",
+    "genres": "Genres",
+    "years": "Années",
+    "videoTypes": "Types de vidéo",
+    "parentalRatings": "Classifications parentales",
+    "themeVideo": "Vidéo du générique",
+    "themeSong": "Chanson thème",
+    "specialFeatures": "Particularités",
+    "trailer": "Bande-annonce",
+    "subtitles": "Sous-titres",
+    "features": "Longs métrages",
+    "dislikes": "Pas aimés",
+    "likes": "Aimés",
+    "favorite": "Favori",
+    "resumable": "Reprise possible",
+    "unplayed": "Non lu",
+    "played": "Lu",
+    "status": "État",
+    "filtersNotFound": "Impossible de charger les filtres",
+    "serverVersionTooLow": "La version du serveur doit être 10.7.0 ou plus haut",
+    "noNetworkConnection": "Aucune connexion réseau",
+    "unhandledException": "Exception non gérée",
+    "selectServer": "Sélectionner le serveur",
+    "moreLikeArtist": "Similaires à {artist}",
+    "disc": "Disque {discNumber}",
+    "byArtist": "Par",
+    "connect": "Se connecter",
+    "changeServer": "Changer de serveur",
+    "biography": "Biographie",
+    "albums": "Albums",
+    "artist": "Artiste",
+    "studios": "Studios",
+    "collections": "Collections",
+    "unliked": "Peu aimé",
+    "unableGetRelated": "Impossible de récupérer les éléments liés",
+    "sortByType": "Par {type}",
+    "shuffleAll": "Mélanger tout",
+    "selectUser": "Sélectionner un utilisateur",
+    "series": "Séries",
+    "noResultsFound": "Il n'y a rien ici",
+    "networks": "Réseaux",
+    "name": "Nom",
+    "manualLogin": "Connexion manuelle",
+    "loginAs": "Se connecter en tant que {name}",
+    "liked": "Aimé",
+    "filter": "Filtre",
+    "failedToRefreshItems": "Échec du rafraîchissement des éléments",
+    "changeUser": "Changer d'utilisateur",
+    "artists": "Artistes",
+    "actors": "Acteurs",
+    "validation": {
+        "mustBeUrl": "Ce champ n'est pas une URL valide",
+        "required": "Ce champ est requis"
+    },
+    "viewDetails": "Afficher les détails",
+    "numberTracks": "{number} pistes",
+    "nextUp": "À suivre",
+    "libraries": "Médiathèques",
+    "latestLibrary": "Derniers {libraryName}",
+    "darkModeToggle": "Activer le mode sombre",
+    "settingsSections": {
+        "liveTvAndDvr": {
+            "name": "TV en direct et enregistrements"
+        },
+        "libraries": {
+            "name": "Médiathèques",
+            "description": "Gérer les médiathèques et leurs métadonnées"
+        },
+        "home": {
+            "name": "Écran d'accueil"
+        },
+        "dlna": {
+            "name": "DLNA"
+        },
+        "devices": {
+            "name": "Appareils"
+        },
+        "apiKeys": {
+            "name": "Clés API"
+        },
+        "account": {
+            "name": "Compte",
+            "description": "Éditer vos informations d'utilisateur"
+        }
+    },
+    "serverDashboard": "Tableau de bord du serveur",
+    "server": "Serveur",
+    "operatingSystem": "Système d'exploitation",
+    "links": {
+        "reportAnIssue": "Reporter une erreur avec le client Vue",
+        "readTheDocumentation": "Lire la documentation",
+        "poweredByJellyfin": "Ce serveur est propulsé par Jellyfin",
+        "helpTranslate": "Aidez à traduire Jellyfin dans votre langue"
+    },
+    "jellyfinLogo": "Logo Jellyfin",
+    "failedSettingDisplayPreferences": "Impossible de modifier les préférences d'affichage.",
+    "failedRetrievingDisplayPreferences": "Impossible de lire les préférences d'affichage. Les valeurs par défaut seront utilisées.",
+    "errors": {
+        "messages": {
+            "videoPlayerError": "Le lecteur vidéo a rencontré une erreur irrécupérable.",
+            "errorCode": "Code erreur : {errorCode}"
+        },
+        "anErrorHappened": "Une erreur est survenue"
+    },
+    "buttons": {
+        "ok": "OK"
+    },
+    "architecture": "Architecture"
+}

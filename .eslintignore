@@ -1,4 +1,7 @@
-node_modules
+api
+.nuxt
 dist
-.idea
+.run
 .vscode
+.devcontainer
+sw.*

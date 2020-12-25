@@ -1,0 +1,218 @@
+{
+  "AboutLinks": {
+    "description": "Auto imported from components/AboutLinks.vue"
+  },
+  "LazyAboutLinks": {
+    "description": "Auto imported from components/AboutLinks.vue"
+  },
+  "AddServerForm": {
+    "description": "Auto imported from components/AddServerForm.vue"
+  },
+  "LazyAddServerForm": {
+    "description": "Auto imported from components/AddServerForm.vue"
+  },
+  "Backdrop": {
+    "description": "Auto imported from components/Backdrop.vue"
+  },
+  "LazyBackdrop": {
+    "description": "Auto imported from components/Backdrop.vue"
+  },
+  "BlurhashCanvas": {
+    "description": "Auto imported from components/BlurhashCanvas.vue"
+  },
+  "LazyBlurhashCanvas": {
+    "description": "Auto imported from components/BlurhashCanvas.vue"
+  },
+  "BlurhashImage": {
+    "description": "Auto imported from components/BlurhashImage.vue"
+  },
+  "LazyBlurhashImage": {
+    "description": "Auto imported from components/BlurhashImage.vue"
+  },
+  "Card": {
+    "description": "Auto imported from components/Card.vue"
+  },
+  "LazyCard": {
+    "description": "Auto imported from components/Card.vue"
+  },
+  "ConnectionMonitor": {
+    "description": "Auto imported from components/ConnectionMonitor.vue"
+  },
+  "LazyConnectionMonitor": {
+    "description": "Auto imported from components/ConnectionMonitor.vue"
+  },
+  "DarkModeToggle": {
+    "description": "Auto imported from components/DarkModeToggle.vue"
+  },
+  "LazyDarkModeToggle": {
+    "description": "Auto imported from components/DarkModeToggle.vue"
+  },
+  "DateInput": {
+    "description": "Auto imported from components/DateInput.vue"
+  },
+  "LazyDateInput": {
+    "description": "Auto imported from components/DateInput.vue"
+  },
+  "FilterButton": {
+    "description": "Auto imported from components/FilterButton.vue"
+  },
+  "LazyFilterButton": {
+    "description": "Auto imported from components/FilterButton.vue"
+  },
+  "HomeHeader": {
+    "description": "Auto imported from components/HomeHeader.vue"
+  },
+  "LazyHomeHeader": {
+    "description": "Auto imported from components/HomeHeader.vue"
+  },
+  "HomeSection": {
+    "description": "Auto imported from components/HomeSection.vue"
+  },
+  "LazyHomeSection": {
+    "description": "Auto imported from components/HomeSection.vue"
+  },
+  "ImageEditor": {
+    "description": "Auto imported from components/ImageEditor.vue"
+  },
+  "LazyImageEditor": {
+    "description": "Auto imported from components/ImageEditor.vue"
+  },
+  "ImageSearch": {
+    "description": "Auto imported from components/ImageSearch.vue"
+  },
+  "LazyImageSearch": {
+    "description": "Auto imported from components/ImageSearch.vue"
+  },
+  "ItemGrid": {
+    "description": "Auto imported from components/ItemGrid.vue"
+  },
+  "LazyItemGrid": {
+    "description": "Auto imported from components/ItemGrid.vue"
+  },
+  "ItemMenu": {
+    "description": "Auto imported from components/ItemMenu.vue"
+  },
+  "LazyItemMenu": {
+    "description": "Auto imported from components/ItemMenu.vue"
+  },
+  "LocaleSwitcher": {
+    "description": "Auto imported from components/LocaleSwitcher.vue"
+  },
+  "LazyLocaleSwitcher": {
+    "description": "Auto imported from components/LocaleSwitcher.vue"
+  },
+  "LoginForm": {
+    "description": "Auto imported from components/LoginForm.vue"
+  },
+  "LazyLoginForm": {
+    "description": "Auto imported from components/LoginForm.vue"
+  },
+  "MediaInfo": {
+    "description": "Auto imported from components/MediaInfo.vue"
+  },
+  "LazyMediaInfo": {
+    "description": "Auto imported from components/MediaInfo.vue"
+  },
+  "MetadataEditor": {
+    "description": "Auto imported from components/MetadataEditor.vue"
+  },
+  "LazyMetadataEditor": {
+    "description": "Auto imported from components/MetadataEditor.vue"
+  },
+  "MetadataEditorDialog": {
+    "description": "Auto imported from components/MetadataEditorDialog.vue"
+  },
+  "LazyMetadataEditorDialog": {
+    "description": "Auto imported from components/MetadataEditorDialog.vue"
+  },
+  "PersonEditor": {
+    "description": "Auto imported from components/PersonEditor.vue"
+  },
+  "LazyPersonEditor": {
+    "description": "Auto imported from components/PersonEditor.vue"
+  },
+  "PersonList": {
+    "description": "Auto imported from components/PersonList.vue"
+  },
+  "LazyPersonList": {
+    "description": "Auto imported from components/PersonList.vue"
+  },
+  "RelatedItems": {
+    "description": "Auto imported from components/RelatedItems.vue"
+  },
+  "LazyRelatedItems": {
+    "description": "Auto imported from components/RelatedItems.vue"
+  },
+  "SeasonTabs": {
+    "description": "Auto imported from components/SeasonTabs.vue"
+  },
+  "LazySeasonTabs": {
+    "description": "Auto imported from components/SeasonTabs.vue"
+  },
+  "ServerCard": {
+    "description": "Auto imported from components/ServerCard.vue"
+  },
+  "LazyServerCard": {
+    "description": "Auto imported from components/ServerCard.vue"
+  },
+  "SkeletonCard": {
+    "description": "Auto imported from components/SkeletonCard.vue"
+  },
+  "LazySkeletonCard": {
+    "description": "Auto imported from components/SkeletonCard.vue"
+  },
+  "SkeletonHomeSection": {
+    "description": "Auto imported from components/SkeletonHomeSection.vue"
+  },
+  "LazySkeletonHomeSection": {
+    "description": "Auto imported from components/SkeletonHomeSection.vue"
+  },
+  "SkeletonItemGrid": {
+    "description": "Auto imported from components/SkeletonItemGrid.vue"
+  },
+  "LazySkeletonItemGrid": {
+    "description": "Auto imported from components/SkeletonItemGrid.vue"
+  },
+  "Snackbar": {
+    "description": "Auto imported from components/Snackbar.vue"
+  },
+  "LazySnackbar": {
+    "description": "Auto imported from components/Snackbar.vue"
+  },
+  "SortButton": {
+    "description": "Auto imported from components/SortButton.vue"
+  },
+  "LazySortButton": {
+    "description": "Auto imported from components/SortButton.vue"
+  },
+  "TrackList": {
+    "description": "Auto imported from components/TrackList.vue"
+  },
+  "LazyTrackList": {
+    "description": "Auto imported from components/TrackList.vue"
+  },
+  "TypeButton": {
+    "description": "Auto imported from components/TypeButton.vue"
+  },
+  "LazyTypeButton": {
+    "description": "Auto imported from components/TypeButton.vue"
+  },
+  "UserButton": {
+    "description": "Auto imported from components/UserButton.vue"
+  },
+  "LazyUserButton": {
+    "description": "Auto imported from components/UserButton.vue"
+  },
+  "UserCard": {
+    "description": "Auto imported from components/UserCard.vue"
+  },
+  "LazyUserCard": {
+    "description": "Auto imported from components/UserCard.vue"
+  },
+  "VideoPlayer": {
+    "description": "Auto imported from components/VideoPlayer.vue"
+  },
+  "LazyVideoPlayer": {
+    "description": "Auto imported from components/VideoPlayer.vue"
+  }
+}

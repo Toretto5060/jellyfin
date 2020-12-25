@@ -1,0 +1,149 @@
+{
+  "title": "Jellyfin",
+  "meta": [
+    {
+      "hid": "charset",
+      "charset": "utf-8"
+    },
+    {
+      "hid": "viewport",
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"
+    },
+    {
+      "hid": "mobile-web-app-capable",
+      "name": "mobile-web-app-capable",
+      "content": "yes"
+    },
+    {
+      "hid": "apple-mobile-web-app-capable",
+      "name": "apple-mobile-web-app-capable",
+      "content": "yes"
+    },
+    {
+      "hid": "apple-mobile-web-app-status-bar-style",
+      "name": "apple-mobile-web-app-status-bar-style",
+      "content": "dark"
+    },
+    {
+      "hid": "apple-mobile-web-app-title",
+      "name": "apple-mobile-web-app-title",
+      "content": "Jellyfin"
+    },
+    {
+      "hid": "author",
+      "name": "author",
+      "content": "Jellyfin Team"
+    },
+    {
+      "hid": "description",
+      "name": "description",
+      "content": "This project uses [Yarn](https://yarnpkg.com/getting-started/install) as a package manager."
+    },
+    {
+      "hid": "theme-color",
+      "name": "theme-color",
+      "content": "#424242"
+    },
+    {
+      "hid": "og:type",
+      "name": "og:type",
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "hid": "og:title",
+      "name": "og:title",
+      "property": "og:title",
+      "content": "Jellyfin"
+    },
+    {
+      "hid": "og:site_name",
+      "name": "og:site_name",
+      "property": "og:site_name",
+      "content": "Jellyfin"
+    },
+    {
+      "hid": "og:description",
+      "name": "og:description",
+      "property": "og:description",
+      "content": "This project uses [Yarn](https://yarnpkg.com/getting-started/install) as a package manager."
+    }
+  ],
+  "link": [
+    {
+      "rel": "shortcut icon",
+      "href": "/_nuxt/icons/icon_64x64.8996f3.png"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "/_nuxt/icons/icon_512x512.8996f3.png",
+      "sizes": "512x512"
+    },
+    {
+      "href": "/_nuxt/icons/splash_iphonese_640x1136.8996f3.png",
+      "media": "(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-iphonese"
+    },
+    {
+      "href": "/_nuxt/icons/splash_iphone6_50x1334.8996f3.png",
+      "media": "(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-iphone6"
+    },
+    {
+      "href": "/_nuxt/icons/splash_iphoneplus_1080x1920.8996f3.png",
+      "media": "(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-iphoneplus"
+    },
+    {
+      "href": "/_nuxt/icons/splash_iphonex_1125x2436.8996f3.png",
+      "media": "(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-iphonex"
+    },
+    {
+      "href": "/_nuxt/icons/splash_iphonexr_828x1792.8996f3.png",
+      "media": "(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-iphonexr"
+    },
+    {
+      "href": "/_nuxt/icons/splash_iphonexsmax_1242x2688.8996f3.png",
+      "media": "(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-iphonexsmax"
+    },
+    {
+      "href": "/_nuxt/icons/splash_ipad_1536x2048.8996f3.png",
+      "media": "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-ipad"
+    },
+    {
+      "media": "(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-ipadpro1"
+    },
+    {
+      "media": "(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-ipadpro2"
+    },
+    {
+      "media": "(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)",
+      "rel": "apple-touch-startup-image",
+      "hid": "apple-touch-startup-image-ipadpro3"
+    },
+    {
+      "rel": "manifest",
+      "href": "/_nuxt/manifest.42b6e501.json",
+      "hid": "manifest"
+    }
+  ],
+  "htmlAttrs": {
+    "lang": "en"
+  }
+}

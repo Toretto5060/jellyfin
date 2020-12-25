@@ -1,0 +1,86 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_9f4d2d0c"
+  },
+  {
+    "name": "metadata",
+    "path": "/metadata",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\metadata\\\\index.vue",
+    "chunkName": "pages/metadata/index",
+    "_name": "_274dc914"
+  },
+  {
+    "name": "SelectServer",
+    "path": "/SelectServer",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\SelectServer.vue",
+    "chunkName": "pages/SelectServer",
+    "_name": "_02df1704"
+  },
+  {
+    "name": "settings",
+    "path": "/settings",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\settings\\\\index.vue",
+    "chunkName": "pages/settings/index",
+    "_name": "_5e8227a0"
+  },
+  {
+    "name": "settings-logsAndActivity",
+    "path": "/settings/logsAndActivity",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\settings\\\\logsAndActivity.vue",
+    "chunkName": "pages/settings/logsAndActivity",
+    "_name": "_e79a7cb6"
+  },
+  {
+    "name": "artist-itemId",
+    "path": "/artist/:itemId",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\artist\\\\_itemId\\\\index.vue",
+    "chunkName": "pages/artist/_itemId/index",
+    "_name": "_c999e2ea"
+  },
+  {
+    "name": "genre-itemId",
+    "path": "/genre/:itemId",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\genre\\\\_itemId\\\\index.vue",
+    "chunkName": "pages/genre/_itemId/index",
+    "_name": "_21aeb0ce"
+  },
+  {
+    "name": "item-itemId",
+    "path": "/item/:itemId",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\item\\\\_itemId\\\\index.vue",
+    "chunkName": "pages/item/_itemId/index",
+    "_name": "_c79e2bd2"
+  },
+  {
+    "name": "library-viewId",
+    "path": "/library/:viewId?",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\library\\\\_viewId.vue",
+    "chunkName": "pages/library/_viewId",
+    "_name": "_7c38b63a"
+  },
+  {
+    "name": "person-itemId",
+    "path": "/person/:itemId",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\person\\\\_itemId\\\\index.vue",
+    "chunkName": "pages/person/_itemId/index",
+    "_name": "_ee8990ce"
+  },
+  {
+    "name": "item-itemId-play",
+    "path": "/item/:itemId?/play",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\item\\\\_itemId\\\\play.vue",
+    "chunkName": "pages/item/_itemId/play",
+    "_name": "_e16edb02"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_329c733a"
+  }
+]

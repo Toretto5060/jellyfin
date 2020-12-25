@@ -1,57 +1,110 @@
 jobs:
-- job: Build
-  displayName: 'Build'
+  - job: Build
+    displayName: 'Build'
 
-  strategy:
-    matrix:
-      Development:
-        BuildConfiguration: development
-      Production:
-        BuildConfiguration: production
+    pool:
+      vmImage: 'ubuntu-latest'
 
-  pool:
-    vmImage: 'ubuntu-latest'
+    steps:
+      - task: NodeTool@0
+        displayName: 'Install Node'
+        inputs:
+          versionSpec: '12.x'
 
-  steps:
-  - task: NodeTool@0
-    displayName: 'Install Node'
-    inputs:
-      versionSpec: '12.x'
+      - task: Cache@2
+        displayName: 'Check Cache'
+        inputs:
+          key: 'yarn | yarn.lock'
+          path: 'node_modules'
+          cacheHitVar: CACHE_RESTORED
 
-  - task: Cache@2
-    displayName: 'Cache node_modules'
-    inputs:
-      key: 'yarn | yarn.lock'
-      path: 'node_modules'
+      - script: 'yarn install --frozen-lockfile'
+        displayName: 'Install Dependencies'
+        condition: ne(variables.CACHE_RESTORED, 'true')
 
-  - script: 'yarn install --frozen-lockfile'
-    displayName: 'Install Dependencies'
-    env:
-      SKIP_PREPARE: 'true'
+      - script: 'yarn build'
+        displayName: 'Build'
 
-  - script: 'yarn build:development'
-    displayName: 'Build Development'
-    condition: eq(variables['BuildConfiguration'], 'development')
+      - task: PublishPipelineArtifact@1
+        displayName: 'Publish Generated Static Pages as Artifact'
+        inputs:
+          targetPath: $(System.DefaultWorkingDirectory)/dist
+          artifactName: dist
 
-  - script: 'yarn build:production'
-    displayName: 'Build Production'
-    condition: eq(variables['BuildConfiguration'], 'production')
+  - job: BuildDocker
+    displayName: 'Build Docker Images'
+    dependsOn: Build
+    condition: succeeded()
 
-  - script: 'test -d dist'
-    displayName: 'Check Build'
+    pool:
+      vmImage: 'ubuntu-latest'
 
-  - script: 'mv dist jellyfin-web'
-    displayName: 'Rename Directory'
+    variables:
+      - name: DOCKER_CLI_EXPERIMENTAL
+        value: 'enabled'
 
-  - task: ArchiveFiles@2
-    displayName: 'Archive Directory'
-    inputs:
-      rootFolderOrFile: 'jellyfin-web'
-      includeRootFolder: true
-      archiveFile: 'jellyfin-web-$(BuildConfiguration)'
+      - name: Version
+        value: $[replace(variables['Build.SourceBranch'],'refs/tags/v','')]
 
-  - task: PublishPipelineArtifact@1
-    displayName: 'Publish Release'
-    inputs:
-      targetPath: '$(Build.SourcesDirectory)/jellyfin-web-$(BuildConfiguration).zip'
-      artifactName: 'jellyfin-web-$(BuildConfiguration)'
+    steps:
+      - task: DownloadPipelineArtifact@2
+        displayName: 'Download Artifact from Build Job'
+        inputs:
+          source: current
+          artifact: dist
+          path: $(System.DefaultWorkingDirectory)/dist
+
+      - task: Docker@2
+        displayName: 'Login to Docker Hub'
+        condition: or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), startsWith(variables['Build.SourceBranch'], 'refs/tags/v'))
+        inputs:
+          command: login
+          containerRegistry: 'Docker Hub'
+
+      - task: CmdLine@2
+        displayName: 'Register Qemu Binfmt and Docker Buildx Builder'
+        inputs:
+          script: |
+            docker version
+            docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+            docker buildx create --name builder --driver docker-container
+
+      - task: CmdLine@2
+        displayName: 'Build PR Docker Image'
+        condition: eq(variables['System.PullRequest.TargetBranch'], 'master')
+        inputs:
+          script: |
+            docker buildx use --builder builder
+            docker buildx build --file ./Dockerfile.dev --no-cache \
+              --platform linux/arm,linux/arm64,linux/amd64 \
+              --tag pr-$(System.PullRequest.PullRequestId) .
+
+      - task: CmdLine@2
+        displayName: 'Build and Push Unstable Docker Image'
+        condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+        inputs:
+          script: |
+            docker buildx use --builder builder
+            docker buildx build --file ./Dockerfile.dev --no-cache --push \
+              --platform linux/arm,linux/arm64,linux/amd64 \
+              --tag jellyfin/jellyfin-vue:unstable-$(Build.BuildNumber) \
+              --tag jellyfin/jellyfin-vue:unstable .
+
+      - task: CmdLine@2
+        displayName: 'Build and Push Stable Docker Image'
+        condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/v')
+        inputs:
+          script: |
+            docker buildx use --builder builder
+            docker buildx build --file ./Dockerfile.dev --no-cache --push \
+              --platform linux/arm,linux/arm64,linux/amd64 \
+              --tag jellyfin/jellyfin-vue:$(Version) \
+              --tag jellyfin/jellyfin-vue:stable \
+              --tag jellyfin/jellyfin-vue:latest .
+
+      - task: Docker@2
+        displayName: 'Logout from Docker Hub'
+        condition: or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), startsWith(variables['Build.SourceBranch'], 'refs/tags/v'))
+        inputs:
+          command: logout
+          containerRegistry: 'Docker Hub'

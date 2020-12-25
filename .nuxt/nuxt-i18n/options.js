@@ -1,0 +1,29 @@
+export const vueI18n = {"fallbackLocale":"en"}
+export const vueI18nLoader = false
+export const locales = [{"code":"cs","iso":"cs-CZ","name":"Čeština","file":"cs.json"},{"code":"de","iso":"de-DE","name":"Deutsch","file":"de.json"},{"code":"en","iso":"en-US","name":"English","file":"en-US.json"},{"code":"es","iso":"es-ES","name":"Español (España)","file":"es.json"},{"code":"fr","iso":"fr-FR","name":"Français","file":"fr-FR.json"},{"code":"nb","iso":"nb-NO","name":"Bokmål","file":"nb_NO.json"},{"code":"nl","iso":"nl-NL","name":"Nederlands","file":"nl.json"},{"code":"pl","iso":"pl-PL","name":"Polski","file":"pl.json"},{"code":"ro","iso":"ro-RO","name":"Română","file":"ro.json"},{"code":"sk","iso":"sk-SK","name":"Slovenčina","file":"sk.json"},{"code":"sl","iso":"sl-SI","name":"Slovenščina","file":"sl.json"},{"code":"sv","iso":"sv-SE","name":"Svenska","file":"sv.json"},{"code":"ta","iso":"ta-IN","name":"தமிழ்","file":"ta.json"},{"code":"tr","iso":"tr-TR","name":"Türkçe","file":"tr.json"},{"code":"vi","iso":"vi-VN","name":"Tiếng Việt","file":"vi.json"},{"code":"zh","iso":"zh_Hans","name":"简体中文","file":"zh_Hans.json"}]
+export const defaultLocale = 'en'
+export const routesNameSeparator = '___'
+export const defaultLocaleRouteNameSuffix = 'default'
+export const strategy = 'no_prefix'
+export const lazy = true
+export const langDir = 'locales/'
+export const rootRedirect = null
+export const detectBrowserLanguage = {"useCookie":false,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"alwaysRedirect":false,"fallbackLocale":"","onlyOnNoPrefix":false,"onlyOnRoot":false}
+export const differentDomains = false
+export const seo = false
+export const baseUrl = ''
+export const vuex = {"moduleName":"i18n","syncLocale":false,"syncMessages":false,"syncRouteParams":true}
+export const parsePages = true
+export const pages = {}
+export const beforeLanguageSwitch = () => null
+export const onLanguageSwitched = () => null
+export const IS_UNIVERSAL_MODE = false
+export const MODULE_NAME = 'nuxt-i18n'
+export const LOCALE_CODE_KEY = 'code'
+export const LOCALE_ISO_KEY = 'iso'
+export const LOCALE_DOMAIN_KEY = 'domain'
+export const LOCALE_FILE_KEY = 'file'
+export const STRATEGIES = {"PREFIX":"prefix","PREFIX_EXCEPT_DEFAULT":"prefix_except_default","PREFIX_AND_DEFAULT":"prefix_and_default","NO_PREFIX":"no_prefix"}
+export const COMPONENT_OPTIONS_KEY = 'nuxtI18n'
+export const localeCodes = ["cs","de","en","es","fr","nb","nl","pl","ro","sk","sl","sv","ta","tr","vi","zh"]
+export const trailingSlash = undefined
