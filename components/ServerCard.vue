@@ -40,6 +40,7 @@ export default Vue.extend({
       loading: false
     };
   },
+  mounted() {},
   methods: {
     ...mapActions('snackbar', ['pushSnackbarMessage']),
     ...mapActions('servers', ['connectServer', 'removeServer']),

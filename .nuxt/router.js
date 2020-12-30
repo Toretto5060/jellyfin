@@ -4,18 +4,18 @@ import { normalizeURL, decode } from '@nuxt/ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _9f4d2d0c = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _274dc914 = () => interopDefault(import('..\\pages\\metadata\\index.vue' /* webpackChunkName: "pages/metadata/index" */))
-const _02df1704 = () => interopDefault(import('..\\pages\\SelectServer.vue' /* webpackChunkName: "pages/SelectServer" */))
-const _5e8227a0 = () => interopDefault(import('..\\pages\\settings\\index.vue' /* webpackChunkName: "pages/settings/index" */))
-const _e79a7cb6 = () => interopDefault(import('..\\pages\\settings\\logsAndActivity.vue' /* webpackChunkName: "pages/settings/logsAndActivity" */))
-const _c999e2ea = () => interopDefault(import('..\\pages\\artist\\_itemId\\index.vue' /* webpackChunkName: "pages/artist/_itemId/index" */))
-const _21aeb0ce = () => interopDefault(import('..\\pages\\genre\\_itemId\\index.vue' /* webpackChunkName: "pages/genre/_itemId/index" */))
-const _c79e2bd2 = () => interopDefault(import('..\\pages\\item\\_itemId\\index.vue' /* webpackChunkName: "pages/item/_itemId/index" */))
-const _7c38b63a = () => interopDefault(import('..\\pages\\library\\_viewId.vue' /* webpackChunkName: "pages/library/_viewId" */))
-const _ee8990ce = () => interopDefault(import('..\\pages\\person\\_itemId\\index.vue' /* webpackChunkName: "pages/person/_itemId/index" */))
-const _e16edb02 = () => interopDefault(import('..\\pages\\item\\_itemId\\play.vue' /* webpackChunkName: "pages/item/_itemId/play" */))
-const _329c733a = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _21129214 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _629528e0 = () => interopDefault(import('..\\pages\\metadata\\index.vue' /* webpackChunkName: "pages/metadata/index" */))
+const _00644382 = () => interopDefault(import('..\\pages\\SelectServer.vue' /* webpackChunkName: "pages/SelectServer" */))
+const _05e9ca1c = () => interopDefault(import('..\\pages\\settings\\index.vue' /* webpackChunkName: "pages/settings/index" */))
+const _36be7921 = () => interopDefault(import('..\\pages\\settings\\logsAndActivity.vue' /* webpackChunkName: "pages/settings/logsAndActivity" */))
+const _1d3a2ee2 = () => interopDefault(import('..\\pages\\artist\\_itemId\\index.vue' /* webpackChunkName: "pages/artist/_itemId/index" */))
+const _7e537d15 = () => interopDefault(import('..\\pages\\genre\\_itemId\\index.vue' /* webpackChunkName: "pages/genre/_itemId/index" */))
+const _7c5115ca = () => interopDefault(import('..\\pages\\item\\_itemId\\index.vue' /* webpackChunkName: "pages/item/_itemId/index" */))
+const _077051e7 = () => interopDefault(import('..\\pages\\library\\_viewId.vue' /* webpackChunkName: "pages/library/_viewId" */))
+const _4229dcc6 = () => interopDefault(import('..\\pages\\person\\_itemId\\index.vue' /* webpackChunkName: "pages/person/_itemId/index" */))
+const _1ce296fb = () => interopDefault(import('..\\pages\\item\\_itemId\\play.vue' /* webpackChunkName: "pages/item/_itemId/play" */))
+const _25cf13df = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -35,51 +35,51 @@ export const routerOptions = {
 
   routes: [{
     path: "/login",
-    component: _9f4d2d0c,
+    component: _21129214,
     name: "login"
   }, {
     path: "/metadata",
-    component: _274dc914,
+    component: _629528e0,
     name: "metadata"
   }, {
     path: "/SelectServer",
-    component: _02df1704,
+    component: _00644382,
     name: "SelectServer"
   }, {
     path: "/settings",
-    component: _5e8227a0,
+    component: _05e9ca1c,
     name: "settings"
   }, {
     path: "/settings/logsAndActivity",
-    component: _e79a7cb6,
+    component: _36be7921,
     name: "settings-logsAndActivity"
   }, {
     path: "/artist/:itemId",
-    component: _c999e2ea,
+    component: _1d3a2ee2,
     name: "artist-itemId"
   }, {
     path: "/genre/:itemId",
-    component: _21aeb0ce,
+    component: _7e537d15,
     name: "genre-itemId"
   }, {
     path: "/item/:itemId",
-    component: _c79e2bd2,
+    component: _7c5115ca,
     name: "item-itemId"
   }, {
     path: "/library/:viewId?",
-    component: _7c38b63a,
+    component: _077051e7,
     name: "library-viewId"
   }, {
     path: "/person/:itemId",
-    component: _ee8990ce,
+    component: _4229dcc6,
     name: "person-itemId"
   }, {
     path: "/item/:itemId?/play",
-    component: _e16edb02,
+    component: _1ce296fb,
     name: "item-itemId-play"
   }, {
     path: "/",
-    component: _329c733a,
+    component: _25cf13df,
     name: "index"
   }],
 

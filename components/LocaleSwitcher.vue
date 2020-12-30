@@ -9,7 +9,7 @@
       <v-list-item
         v-for="(item, index) in $i18n.locales"
         :key="index"
-        :input-value="item.code === $i18n.locale"
+        :input-value="item.code === 'zh'"
         @click="editCustomPref({ key: 'locale', value: item.code })"
       >
         <v-list-item-title>{{ item.name }}</v-list-item-title>

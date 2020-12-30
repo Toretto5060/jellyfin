@@ -5,7 +5,7 @@
         v-if="isEmpty(currentUser) && !loginAsOther && publicUsers.length > 0"
         xl="8"
       >
-        <h1 class="text-h4 mb-6 text-center">{{ $t('selectUser') }}</h1>
+        <h1 class="text-h4 mb-6 text-center">选择用户</h1>
         <v-row align="center" justify="center">
           <v-col
             v-for="publicUser in publicUsers"
@@ -23,10 +23,10 @@
         <v-row align="center" justify="center" no-gutters>
           <v-col md="4" class="d-flex flex-row mt-7">
             <v-btn class="flex-grow-1 mr-2" large @click="loginAsOther = true">
-              {{ $t('manualLogin') }}
+              手动登录
             </v-btn>
             <v-btn class="flex-grow-1 mr-2" to="/selectServer" nuxt large>
-              {{ $t('changeServer') }}
+              更改服务器
             </v-btn>
             <locale-switcher />
           </v-col>

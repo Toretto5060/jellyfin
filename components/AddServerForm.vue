@@ -10,9 +10,9 @@
           <v-text-field
             v-model="serverUrl"
             outlined
-            :label="$t('serverAddress')"
+            label="连接服务器"
             type="url"
-            :error-messages="errors"
+            error-messages="服务器格式错误"
             required
           ></v-text-field>
         </validation-provider>
@@ -26,7 +26,7 @@
               color="primary"
               type="submit"
             >
-              {{ $t('connect') }}
+              连接
             </v-btn>
           </v-col>
           <v-col cols="auto">

@@ -2,85 +2,85 @@
   {
     "name": "login",
     "path": "/login",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\login.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\login.vue",
     "chunkName": "pages/login",
-    "_name": "_9f4d2d0c"
+    "_name": "_21129214"
   },
   {
     "name": "metadata",
     "path": "/metadata",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\metadata\\\\index.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\metadata\\\\index.vue",
     "chunkName": "pages/metadata/index",
-    "_name": "_274dc914"
+    "_name": "_629528e0"
   },
   {
     "name": "SelectServer",
     "path": "/SelectServer",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\SelectServer.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\SelectServer.vue",
     "chunkName": "pages/SelectServer",
-    "_name": "_02df1704"
+    "_name": "_00644382"
   },
   {
     "name": "settings",
     "path": "/settings",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\settings\\\\index.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\settings\\\\index.vue",
     "chunkName": "pages/settings/index",
-    "_name": "_5e8227a0"
+    "_name": "_05e9ca1c"
   },
   {
     "name": "settings-logsAndActivity",
     "path": "/settings/logsAndActivity",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\settings\\\\logsAndActivity.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\settings\\\\logsAndActivity.vue",
     "chunkName": "pages/settings/logsAndActivity",
-    "_name": "_e79a7cb6"
+    "_name": "_36be7921"
   },
   {
     "name": "artist-itemId",
     "path": "/artist/:itemId",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\artist\\\\_itemId\\\\index.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\artist\\\\_itemId\\\\index.vue",
     "chunkName": "pages/artist/_itemId/index",
-    "_name": "_c999e2ea"
+    "_name": "_1d3a2ee2"
   },
   {
     "name": "genre-itemId",
     "path": "/genre/:itemId",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\genre\\\\_itemId\\\\index.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\genre\\\\_itemId\\\\index.vue",
     "chunkName": "pages/genre/_itemId/index",
-    "_name": "_21aeb0ce"
+    "_name": "_7e537d15"
   },
   {
     "name": "item-itemId",
     "path": "/item/:itemId",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\item\\\\_itemId\\\\index.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\item\\\\_itemId\\\\index.vue",
     "chunkName": "pages/item/_itemId/index",
-    "_name": "_c79e2bd2"
+    "_name": "_7c5115ca"
   },
   {
     "name": "library-viewId",
     "path": "/library/:viewId?",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\library\\\\_viewId.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\library\\\\_viewId.vue",
     "chunkName": "pages/library/_viewId",
-    "_name": "_7c38b63a"
+    "_name": "_077051e7"
   },
   {
     "name": "person-itemId",
     "path": "/person/:itemId",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\person\\\\_itemId\\\\index.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\person\\\\_itemId\\\\index.vue",
     "chunkName": "pages/person/_itemId/index",
-    "_name": "_ee8990ce"
+    "_name": "_4229dcc6"
   },
   {
     "name": "item-itemId-play",
     "path": "/item/:itemId?/play",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\item\\\\_itemId\\\\play.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\item\\\\_itemId\\\\play.vue",
     "chunkName": "pages/item/_itemId/play",
-    "_name": "_e16edb02"
+    "_name": "_1ce296fb"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\zhangLei\\\\Desktop\\\\jellyfin-vue-master\\\\jellyfin-vue-master\\\\pages\\\\index.vue",
+    "component": "F:\\\\git_person\\\\jellyfin\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_329c733a"
+    "_name": "_25cf13df"
   }
 ]

@@ -2,7 +2,7 @@
   <v-container fill-height>
     <v-row align="center" justify="center">
       <v-col md="4">
-        <h1 class="text-h4 mb-6 text-center">{{ $t('selectServer') }}</h1>
+        <h1 class="text-h4 mb-6 text-center">连接服务器</h1>
         <div v-if="$store.state.servers.serverList">
           <server-card
             v-for="server in $store.state.servers.serverList"
@@ -10,6 +10,7 @@
             :server-info="server"
           ></server-card>
         </div>
+
         <add-server-form />
       </v-col>
     </v-row>
@@ -29,7 +30,7 @@ export default Vue.extend({
     };
   },
   created() {
-    this.setPageTitle({ title: this.$t('selectServer') });
+    this.setPageTitle({ title: '选择服务器' });
   },
   methods: {
     ...mapActions('page', ['setPageTitle'])
